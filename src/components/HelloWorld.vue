@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h1>{{ msg3 }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -32,15 +33,18 @@
 
 <script>
 export default {
+  // 使用 HelloWorld 的 template
   name: 'HelloWorld',
   props: {
-    msg: String
-  }
+    msg: String,
+    msg3: String
+  },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+/* 解析運算元，可以針對指定的類別做另外解析 h3 增加屬性 margin */
 h3 {
   margin: 40px 0 0;
 }

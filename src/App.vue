@@ -1,15 +1,21 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="這邊會被import"/>
+  <HelloWorld msg2="這邊不會被import"/>
+  <HelloWorld msg3="這邊又被import啦"/>
+
+  <NiceToMeetYou msg="這邊好像也會被import"/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import NiceToMeetYou from './components/NiceToMeetYou.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    NiceToMeetYou,
   }
 }
 </script>
