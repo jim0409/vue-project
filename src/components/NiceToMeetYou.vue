@@ -2,14 +2,23 @@
   <div class="hello">
       <p>Nice to Meet You</p>
   </div>
+  <div id="app">
+      {{message}}
+  </div>
 </template>
 
 <script>
+
 export default {
   name: 'NiceToMeetYou',
   props: {
     msg: String,
   },
+  method:{
+      ma : function check(){
+          console.log(this);
+      }
+  }
 }
 </script>
 
