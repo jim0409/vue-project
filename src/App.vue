@@ -14,12 +14,8 @@ import { ref } from 'vue';
 export default {
     setup() {
         const visibleLeft = ref(false);
-        const visibleRight = ref(false);
-        const visibleTop = ref(false);
-        const visibleBottom = ref(false);
-        const visibleFull = ref(false);
 
-		return { visibleLeft, visibleRight, visibleTop, visibleBottom, visibleFull }
+		return { visibleLeft }
     }
 }
 </script>
